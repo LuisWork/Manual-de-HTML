@@ -421,8 +421,102 @@
                     similar en formato a las etiquetas HTML, se requiere al comienzo de cada
                     documento para ayudar al navegador a decidir cómo debe generar la página
                     web.
-
                 </p>
+                <p>
+                    Los elementos HTML conforman una estructura de tipo árbol con el elemento
+                    <code>< html ></code> como su raíz. Esta estructura presenta múltiples niveles de organización,
+                    con algunos elementos a cargo de definir secciones generales del documento y
+                    otros encargados de representar secciones menores o contenido. Los
+                    siguientes son los elementos disponibles para definir la columna vertebral de la
+                    estructura y facilitar la información que el navegador necesita para mostrar la
+                    página en la pantalla.
+                </p>
+                <table>
+                    <tr>
+                        <td><code>< html ></code></td>
+                        <td>Este elemento delimita el código HTML. Puede incluir el
+                            atributo lang para definir el idioma del contenido del
+                            documento.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>< head ></code></td>
+                        <td>Este elemento se usa para definir la información
+                            necesaria para configurar la página web, como el título,
+                            el tipo de codificación de caracteres y los archivos
+                            externos requeridos por el documento.</td>
+                    </tr>
+                    <tr>
+                        <td><code>< body ></code></td>
+                        <td>Este elemento delimita el contenido del documento (la
+                            parte visible de la página).</td>
+                    </tr>
+                </table>
+                <p>
+                    El código HTML insertado entre las etiquetas <code>< html ></html></code> se tiene que dividir en
+                    dos
+                    secciones principales: la cabecera y el cuerpo. Por supuesto, la cabecera va
+                    primero y, al igual que el resto de los elementos estructurales, está compuesta
+                    por etiquetas de apertura y cierre.
+                </p>
+                <p>
+                    Entre las etiquetas
+
+                    <code>< head ></code> es necesario definir el título de la página web,
+                    declarar el tipo de codificación de caracteres, facilitar información general
+                    acerca del documento, e incorporar los archivos externos con estilos y códigos
+                    necesarios para generar la página. Excepto por el título e iconos, el resto de la
+                    información insertada en medio de estas etiquetas no es visible para el usuario.
+                    Entre las etiquetas que son parte de la cabecera están descritas en la tabla
+                    siguiente.
+                </p>
+                <table>
+                    <tr>
+                        <td><code>< title ></code></td>
+                        <td>Este elemento define el título de la página.</td>
+                    </tr>
+                    <tr>
+                        <td><code>< base ></code></td>
+                        <td>Este elemento define la URL usada por el navegador
+                            para establecer la ubicación real de las URL relativas. El
+                            elemento debe incluir el atributo href para declarar la
+                            URL base. Cuando se declara este elemento, en lugar de
+                            la URL actual, el navegador usa la URL asignada al
+                            atributo href para completar las URL relativas.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>< meta ></code></td>
+                        <td>Este elemento representa metadatos asociados con el
+                            documento, como la descripción del documento,
+                            palabras claves, el tipo de codificación de caracteres,
+                            etc. El elemento puede incluir los atributos name para
+                            describir el tipo de metadata, content para especificar el
+                            valor, y charset para declarar el tipo de codificación de
+                            caracteres a utilizar para procesar el contenido.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>< link ></code></td>
+                        <td>Este elemento especifica la relación entre el documento
+                            y un recurso externo (generalmente usado para cargar
+                            archivos CSS). El elemento puede incluir los atributos
+                            href para declarar la ubicación del recurso, rel para
+                            definir el tipo de relación, media para especificar el
+                            medio al que el recurso está asociado (pantalla,
+                            impresora, etc.), y type y sizes para declarar el tipo de
+                            recurso y</td>
+                    </tr>
+                    <tr>
+                        <td><code>< "style" ></code></td>
+                        <td>Este elemento se usa para declarar estilos CSS dentro del documento</td>
+                    </tr>
+                    <tr>
+                        <td><code>< "script" ></code></td>
+                        <td>Este elemento se usa para cargar o declarar código
+                            JavaScript</td>
+                    </tr>
+                </table>
             </article>
         </section>
     </main>
