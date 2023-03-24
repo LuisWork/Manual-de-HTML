@@ -1,7 +1,27 @@
+.container{
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 4px;
+}
+
 code{
     color: black;
 }
 
+table{
+    display: flex;
+    justify-content: center;
+}
+
 table td{
     border: 1px solid black;
+}
+
+table td:nth-child(odd){
+    width: 20%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+table td:nth-child(even){
+    padding: 10px;
 }

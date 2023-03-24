@@ -11,771 +11,778 @@
 </head>
 
 <body>
-    <header>
-        <h1>Manual de HTML</h1>
-    </header>
-    <nav>
-        <ul>
-            <li>Inicio</li>
-            <li>Temario</li>
-            <li>Autor</li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Características de HTML5</h2>
-            <article>
-                <p>
-                    Es un lenguaje de etiquetas usado para presentar y estructurar el contenido en
-                    un sitio web. Es la quinta revisión del estándar HTML, el cual fue creado en
-                    1990. La W3C recomendó su utilización para transformarse en el estándar a ser
-                    usado en proyectos venideros. Está relacionado también con la entrada en
-                    decadencia del anterior estándar HTML 4, que se combinaba con otros
-                    lenguajes para producir los sitios que se pueden ver en la actualidad. Con
-                    HTML5 existen otras posibilidades para explotar sitios usando menos recursos,
-                    entrando conjuntamente en desuso el formato XHTML, dado que ya no sería
-                    necesaria su implementación.
-                    Se trata de un sistema para formatear el “layout” o disposición de las páginas
-                    web, así como hacer algunos ajustes a su aspecto. Con HTML5 los navegadores
-                    como Firefox, Chrome, Explorer, Safari y más pueden saber cómo mostrar una
-                    determinada página web, saber dónde están los elementos, dónde poner las
-                    imágenes, o bien dónde ubicar el texto. En este sentido, el HTML5 no se
-                    diferencia demasiado de su predecesor. La diferencia principal, sin embargo, es
-                    el nivel de sofisticación del código que se podrá construir usando HTML5. Las
-                    etiquetas que se indicarán más adelante son una combinación del estándar
-                    original con HTML5.
-                </p>
-                <p>
-                    Entre sus características se puede destacar:
-                </p>
-                <ul>
-                    <li>
-                        <strong>Semántica:</strong> nuevas etiquetas con el fin de indicar principalmente a los
-                        motores de búsqueda cuál es el contenido principal, de navegación y
-                        contextual. Ayuda a mejorar la indexación en caso de que los motores de
-                        búsqueda no detecten la importancia de cada texto en una página web.
-                    </li>
-                    <li>
-                        <strong>Conectividad:</strong> Permite comunicarse con el servidor de formas nuevas e
-                        innovadoras. Entre estas formas de conexión se encuentran los
-                        WebSockets, eventos de servidor enviados y WebRTC.
-                    </li>
-                    <li>
-                        <strong>Sin conexión y almacenamiento:</strong>: Permite a las páginas web almacenar
-                        datos de forma local del lado del cliente y operar offline de una manera
-                        más eficiente.
-                    </li>
-                    <li>
-                        <strong>Multimedia:</strong> Se añade un mejor soporte sobre contenido multimedia
-                        permitiendo la reproducción de audio y video sin necesidad de
-                        componentes o plugins adicionales haciendo que la página reproduzca
-                        de forma nativa dicho contenido, De esta forma la página tarda menos
-                        en cargar y su navegación es más rápida.
-                    </li>
-                    <li>
-                        <strong>Gráficos y efectos 2D/3D:</strong> Proporciona una amplia gama de nuevas
-                        características que se ocupan de los gráficos en la web como lo son
-                        canvas 2D, WebGL, SVG, etc.
-                    </li>
-                    <li>
-                        <strong>Rendimiento e Integración:</strong> En general, se puede prescindir de muchos
-                        plugins y mejorar el rendimiento y velocidad optimizando los recursos de
-                        hardware. En esta categoría se han implementado: Web Workers,
-                        XMLHttpRequest, Motores JIT compilación de JavaScript, History API, el
-                        atributo contentEditable, Arrastrar y soltar, Gestión del foco en HTML,
-                        Manejadores de protocolo basados en web, requestAnimationFrame,
-                        Fullscreen API, API Pointer Lock, Eventos en línea y fuera de línea.
-                    </li>
-                    <li>
-                        <strong>Acceso al dispositivo:</strong> Proporciona APIs para el uso de la cámara, eventos
-                        táctiles, geolocalización, detección de la orientación del hardware y Pointer Lock.
-                    </li>
-                    <li>
-                        <strong>CSS3:</strong> HTML5 con CSS3 se hace una mancuerna estupenda porque se
-                        podría hacer una gran variedad de animaciones y efectos para realizar
-                        diseños sofisticados y sorprendentes con mínimos recursos de
-                        procesamiento. Se ha ampliado para ser capaz de manejar elementos de
-                        estilo de una manera mucho más compleja. Se pueden agregar sombras,
-                        bordes redondeados, transiciones, uso de tipografías externas, mejoras
-                        en el manejo de columnas y cuadros de distribución flexible.
-                    </li>
-                    <li>
-                        <strong>Compatibilidad:</strong> El W3C es una comunidad internacional donde los
-                        miembros trabajan en conjunto para la desarrollo de los estándares web.
-                        Estas implementaciones aún se siguen desarrollando y podemos ver los
-                        avances aquí, cada navegador implementa estas especificaciones a su
-                        propio ritmo.
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h2>Elementos, etiquetas y atributos</h2>
-                <p>Una de las principales ventajas de HTML5 es la inclusión de elementos
-                    semánticos, o marcados semánticos, que ayudan a definir las distintas
-                    divisiones de una página web. En las versiones anteriores a HTML5 se solía
-                    utilizar la etiqueta <code>< div ></code> para realizar las divisiones de una página web,
-                    pero actualmente es recomendado utilizar los elementos semánticos ya que
-                    describen claramente su propósito. Como se puede observar en el esquema de
-                    la figura siguiente, a través de marcadores semánticos se puede diferenciar
-                    claramente el contenido que referencia cada etiqueta.
-                </p>
-                <img src="img/1 - HTML.png" alt="">
-                <p>
-                    Cada uno de los elementos o etiquetas de HTML5 tiene sus propias
-                    propiedades. En la tabla siguiente se muestran las etiquetas más importantes
-                    que son parte de este estándar.
-                </p>
-                <table>
-                    <tr>
-                        <td>Etiqueta</td>
-                        <td>Función</td>
-                    </tr>
-                    <tr>
-                        <td><code>< !---- ></code></td>
-                        <td>Define un comentario</td>
-                    </tr>
-                    <tr>
-                        <td><code>< !DOCTYPE > </code></td>
-                        <td>Define el tipo de documento
-                    </tr>
-                    <tr>
-                        <td><code>< a >< /a ></code></td>
-                        <td>Define un hipervínculo</td>
-                    </tr>
-                    <tr>
-                        <td><code>< address ></ address></code></td>
-                        <td>Define la información de contacto del autor / propietario del
-                            documento
+    <div class="container">
+        <header>
+            <h1>Manual de HTML</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Temario</li>
+                <li>Autor</li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Características de HTML5</h2>
+                <article>
+                    <p>
+                        Es un lenguaje de etiquetas usado para presentar y estructurar el contenido en
+                        un sitio web. Es la quinta revisión del estándar HTML, el cual fue creado en
+                        1990. La W3C recomendó su utilización para transformarse en el estándar a ser
+                        usado en proyectos venideros. Está relacionado también con la entrada en
+                        decadencia del anterior estándar HTML 4, que se combinaba con otros
+                        lenguajes para producir los sitios que se pueden ver en la actualidad. Con
+                        HTML5 existen otras posibilidades para explotar sitios usando menos recursos,
+                        entrando conjuntamente en desuso el formato XHTML, dado que ya no sería
+                        necesaria su implementación.
+                        Se trata de un sistema para formatear el “layout” o disposición de las páginas
+                        web, así como hacer algunos ajustes a su aspecto. Con HTML5 los navegadores
+                        como Firefox, Chrome, Explorer, Safari y más pueden saber cómo mostrar una
+                        determinada página web, saber dónde están los elementos, dónde poner las
+                        imágenes, o bien dónde ubicar el texto. En este sentido, el HTML5 no se
+                        diferencia demasiado de su predecesor. La diferencia principal, sin embargo, es
+                        el nivel de sofisticación del código que se podrá construir usando HTML5. Las
+                        etiquetas que se indicarán más adelante son una combinación del estándar
+                        original con HTML5.
+                    </p>
+                    <p>
+                        Entre sus características se puede destacar:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Semántica:</strong> nuevas etiquetas con el fin de indicar principalmente a los
+                            motores de búsqueda cuál es el contenido principal, de navegación y
+                            contextual. Ayuda a mejorar la indexación en caso de que los motores de
+                            búsqueda no detecten la importancia de cada texto en una página web.
+                        </li>
+                        <li>
+                            <strong>Conectividad:</strong> Permite comunicarse con el servidor de formas nuevas e
+                            innovadoras. Entre estas formas de conexión se encuentran los
+                            WebSockets, eventos de servidor enviados y WebRTC.
+                        </li>
+                        <li>
+                            <strong>Sin conexión y almacenamiento:</strong>: Permite a las páginas web almacenar
+                            datos de forma local del lado del cliente y operar offline de una manera
+                            más eficiente.
+                        </li>
+                        <li>
+                            <strong>Multimedia:</strong> Se añade un mejor soporte sobre contenido multimedia
+                            permitiendo la reproducción de audio y video sin necesidad de
+                            componentes o plugins adicionales haciendo que la página reproduzca
+                            de forma nativa dicho contenido, De esta forma la página tarda menos
+                            en cargar y su navegación es más rápida.
+                        </li>
+                        <li>
+                            <strong>Gráficos y efectos 2D/3D:</strong> Proporciona una amplia gama de nuevas
+                            características que se ocupan de los gráficos en la web como lo son
+                            canvas 2D, WebGL, SVG, etc.
+                        </li>
+                        <li>
+                            <strong>Rendimiento e Integración:</strong> En general, se puede prescindir de muchos
+                            plugins y mejorar el rendimiento y velocidad optimizando los recursos de
+                            hardware. En esta categoría se han implementado: Web Workers,
+                            XMLHttpRequest, Motores JIT compilación de JavaScript, History API, el
+                            atributo contentEditable, Arrastrar y soltar, Gestión del foco en HTML,
+                            Manejadores de protocolo basados en web, requestAnimationFrame,
+                            Fullscreen API, API Pointer Lock, Eventos en línea y fuera de línea.
+                        </li>
+                        <li>
+                            <strong>Acceso al dispositivo:</strong> Proporciona APIs para el uso de la cámara, eventos
+                            táctiles, geolocalización, detección de la orientación del hardware y Pointer Lock.
+                        </li>
+                        <li>
+                            <strong>CSS3:</strong> HTML5 con CSS3 se hace una mancuerna estupenda porque se
+                            podría hacer una gran variedad de animaciones y efectos para realizar
+                            diseños sofisticados y sorprendentes con mínimos recursos de
+                            procesamiento. Se ha ampliado para ser capaz de manejar elementos de
+                            estilo de una manera mucho más compleja. Se pueden agregar sombras,
+                            bordes redondeados, transiciones, uso de tipografías externas, mejoras
+                            en el manejo de columnas y cuadros de distribución flexible.
+                        </li>
+                        <li>
+                            <strong>Compatibilidad:</strong> El W3C es una comunidad internacional donde los
+                            miembros trabajan en conjunto para la desarrollo de los estándares web.
+                            Estas implementaciones aún se siguen desarrollando y podemos ver los
+                            avances aquí, cada navegador implementa estas especificaciones a su
+                            propio ritmo.
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <h2>Elementos, etiquetas y atributos</h2>
+                    <p>Una de las principales ventajas de HTML5 es la inclusión de elementos
+                        semánticos, o marcados semánticos, que ayudan a definir las distintas
+                        divisiones de una página web. En las versiones anteriores a HTML5 se solía
+                        utilizar la etiqueta <code>< div ></code> para realizar las divisiones de una página web,
+                        pero actualmente es recomendado utilizar los elementos semánticos ya que
+                        describen claramente su propósito. Como se puede observar en el esquema de
+                        la figura siguiente, a través de marcadores semánticos se puede diferenciar
+                        claramente el contenido que referencia cada etiqueta.
+                    </p>
+                    <img src="img/1 - HTML.png" alt="">
+                    <p>
+                        Cada uno de los elementos o etiquetas de HTML5 tiene sus propias
+                        propiedades. En la tabla siguiente se muestran las etiquetas más importantes
+                        que son parte de este estándar.
+                    </p>
+                    <table>
+                        <tr>
+                            <td>Etiqueta</td>
+                            <td>Función</td>
+                        </tr>
+                        <tr>
+                            <td><code>< !---- ></code></td>
+                            <td>Define un comentario</td>
+                        </tr>
+                        <tr>
+                            <td><code>< !DOCTYPE > </code></td>
+                            <td>Define el tipo de documento
+                        </tr>
+                        <tr>
+                            <td><code>< a >< /a ></code></td>
+                            <td>Define un hipervínculo</td>
+                        </tr>
+                        <tr>
+                            <td><code>< address ></ address></code></td>
+                            <td>Define la información de contacto del autor / propietario del
+                                documento
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< article ></code></td>
+                            <td>Define un artículo</td>
+                        </tr>
                         </td>
-                    </tr>
-                    <tr>
-                        <td><code>< article ></code></td>
-                        <td>Define un artículo</td>
-                    </tr>
-                    </td>
-                    <tr>
-                        <td><code>< aside ></code></td>
-                        <td>Define el contenido lateral del contenedor de una página
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< audio ></code></td>
-                        <td>Define contenido de sonido</td>
-                    </tr>
-                    <tr>
-                        <td><code>< b ></code></td>
-                        <td>Define texto en negrita
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< blockquote ></code></td>
-                        <td>Define una sección que tiene otra fuente</td>
-                    </tr>
-                    <tr>
-                        <td><code>< body ></code></td>
-                        <td>Define el cuerpo del documento</td>
-                    </tr>
-                    <tr>
-                        <td><code>< br ></code></td>
-                        <td>Define un salto de línea</td>
-                    </tr>
-                    <tr>
-                        <td><code>< button ></code></td>
-                        <td>Define un botón clickeable
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< canvas ></code></td>
-                        <td>Se usa para dibujar gráficos en pantalla</td>
-                    </tr>
-                    <tr>
-                        <td><code>< caption ></code></td>
-                        <td>Define el título de una tabla</td>
-                    </tr>
-                    <tr>
-                        <td><code>< code ></code></td>
-                        <td>Define un trozo de código de programación</td>
-                    </tr>
-                    <tr>
-                        <td><code>< datalist ></code></td>
-                        <td>Especifica en un input una lista predefinida de opciones</td>
-                    </tr>
-                    <tr>
-                        <td><code>< div ></code></td>
-                        <td>Define una sección en un documento</td>
-                    </tr>
-                    <tr>
-                        <td><code>< embed ></code></td>
-                        <td>Define el contenedor de una aplicación externa (no HTML)</td>
-                    </tr>
-                    <tr>
-                        <td><code>< fieldset ></code></td>
-                        <td>Grupo de elementos relacionados en un formulario
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< figure ></figure></code></td>
-                        <td>Especifica autocontenido</td>
-                    </tr>
-                    <tr>
-                        <td><code>< footer ></code></td>
-                        <td>Define el pie de página de un documento</td>
-                    </tr>
-                    <tr>
-                        <td><code>< form ></code></td>
-                        <td>Define un formulario html</td>
-                    </tr>
-                    <tr>
-                        <td><code>< h1 > a < h6 ></code></td>
-                        <td>Define encabezados o títulos</td>
-                    </tr>
-                    <tr>
-                        <td><code>< head ></code></td>
-                        <td>Define información acerca del documento</td>
-                    </tr>
-                    <tr>
-                        <td><code>< header ></code></td>
-                        <td>Define la sección de encabezado del documento</td>
-                    </tr>
-                    <tr>
-                        <td><code>< hr ></code></td>
-                        <td>Define un cambio de temática a partir de una línea dibujada</td>
-                    </tr>
-                    <tr>
-                        <td><code>< html ></code></td>
-                        <td>Define la raíz del documento</td>
-                    </tr>
-                    <tr>
-                        <td><code>< i ></code></td>
-                        <td>Define una parte del texto de modo alternativo</td>
-                    </tr>
-                    <tr>
-                        <td><code>< iframe ></code></td>
-                        <td>Define un frame en línea</td>
-                    </tr>
-                    <tr>
-                        <td><code>< img ></code></td>
-                        <td>Define una imagen</td>
-                    </tr>
-                    <tr>
-                        <td><code>< input ></code></td>
-                        <td>Define un control de entrada de texto</td>
-                    </tr>
-                    <tr>
-                        <td><code>< li ></code></td>
-                        <td>Define un ítem de una lista</td>
-                    </tr>
-                    <tr>
-                        <td><code>< link ></code></td>
-                        <td>Define la relación entre un documento y un recurso externo
-                            (generalmente con hojas de estilo)</td>
-                    </tr>
-                    <tr>
-                        <td><code>< meta ></code></td>
-                        <td>Define un metadato de un documento</td>
-                    </tr>
-                    <tr>
-                        <td><code>< nav ></code></td>
-                        <td>Define un link de navegación</td>
-                    </tr>
-                    <tr>
-                        <td><code>< ol ></code></td>
-                        <td>Define una lista ordenada</td>
-                    </tr>
-                    <tr>
-                        <td><code>< optgroup ></code></td>
-                        <td>Define un grupo de opciones relacionadas en una lista desplegable</td>
-                    </tr>
-                    <tr>
-                        <td><code>< option ></code></td>
-                        <td>Define una opción en una lista desplegable</td>
-                    </tr>
-                    <tr>
-                        <td><code>< p ></code></td>
-                        <td>Define un párrafo</td>
-                    </tr>
-                    <tr>
-                        <td><code>< param ></code></td>
-                        <td>Define un parámetro para un objeto</td>
-                    </tr>
-                    <tr>
-                        <td><code>< "script" ></code></td>
-                        <td>Define un script del lado cliente</td>
-                    </tr>
-                    <tr>
-                        <td><code>< section ></code></td>
-                        <td>Define una sección de un documento</td>
-                    </tr>
-                    <tr>
-                        <td><code>< select ></code></td>
-                        <td>Define un drop-down list</td>
-                    </tr>
-                    <tr>
-                        <td><code>< span ></code></td>
-                        <td>Define una pequeña sección de un documento</td>
-                    </tr>
-                    <tr>
-                        <td><code>< strong ></code></td>
-                        <td>Define un texto en negrita</td>
-                    </tr>
-                    <tr>
-                        <td><code>< "style" ></code></td>
-                        <td>Define un estilo para la información de un documento</td>
-                    </tr>
-                    <tr>
-                        <td><code>< table ></code></td>
-                        <td>Define una tabla</td>
-                    </tr>
-                    <tr>
-                        <td><code>< tbody ></code></td>
-                        <td>Define el cuerpo de una tabla</td>
-                    </tr>
-                    <tr>
-                        <td><code>< td ></code></td>
-                        <td>Define una celda en una tabla</td>
-                    </tr>
-                    <tr>
-                        <td><code>< textarea ></code></td>
-                        <td>Define un control de entrada de múltiples líneas</td>
-                    </tr>
-                    <tr>
-                        <td><code>< tfoot ></code></td>
-                        <td>Agrupa los footer contenidos en una tabla</td>
-                    </tr>
-                    <tr>
-                        <td><code>< th ></code></td>
-                        <td>Define una celda de encabezado en una tabla</td>
-                    </tr>
-                    <tr>
-                        <td><code>< thead ></code></td>
-                        <td>Agrupa los encabezados de una tabla</td>
-                    </tr>
-                    <tr>
-                        <td><code>< time ></code></td>
-                        <td>Define fecha / hora</td>
-                    </tr>
-                    <tr>
-                        <td><code>< title ></code></td>
-                        <td>Define un título para el documento</td>
-                    </tr>
-                    <tr>
-                        <td><code>< tr ></code></td>
-                        <td>Define una fila en una tabla</td>
-                    </tr>
-                    <tr>
-                        <td><code>< ul ></code></td>
-                        <td>Define una lista desordenada</td>
-                    </tr>
-                    <tr>
-                        <td><code>< video ></code></td>
-                        <td>Define un vídeo o película</td>
-                    </tr>
-                </table>
-                <p>
-                    Estas etiquetas o tags se componen y contienen otras propiedades, como son
-                    los atributos y el contenido.
-                </p>
-                <p>
-                    HTML define un total de 91 etiquetas, de las cuales 10 se consideran obsoletas.
-                    Sin embargo, una etiqueta por sí sola a veces no contiene la suficiente
-                    información para estar completamente definida. Para ello se cuenta con los
-                    atributos: pares nombre-valor separados por "=" y escritos en la etiqueta inicial
-                    de un elemento después del nombre del elemento. El valor puede estar
-                    encerrado entre "comillas dobles" o 'simples'. Existen, también, algunos
-                    atributos que afectan al elemento por su presencia en la etiqueta de inicio,
-                    como puede ser el atributo ismap para el elemento <code>< img ></code>.
-                </p>
-                <p>
-                    Esta sería la estructura general de una línea de código en lenguaje HTML:
-                </p>
-                <img src="img/2 - HTML.png" alt="">
-                <p>
-                    O lo que es lo mismo, con un ejemplo:
-                </p>
-                <img src="img/3 - HTML.png" alt="">
-                <p>
-                    Donde:
-                </p>
-                <ul>
-                    <li><code>< a ></code> es la etiqueta o tag inicial y <code>< /a ></code> la etiqueta de cierre</li>
-                    <li>href y target son los atributos.</li>
-                    <li>http://www.enlace.com y _blank son las variables.</li>
-                    <li>Ejemplo de enlace es el contenido.</li>
-                </ul>
-                <p>
-                    Aunque también existen elementos vacíos que no necesitan tag de cierre, cuya
-                    estructura sería ésta:
-                </p>
-                <img src="img/4 - HTML.png" alt="">
-                <p>
-                    Estos elementos vacíos no constan de contenido, como por ejemplo, los tags
-                    <code>< br ></code> o <code>< img ></code>.
-                </p>
-                <h2>Estructura básica de un documento: html, head, body, meta, title, link</h2>
-                <p>
-                    Debido a que los navegadores son capaces de procesar diferentes tipos de
-                    archivos, lo primero que se debe hacer en la construcción de un documento
-                    HTML es indicar su tipo. Para tener seguridad de que el contenido de los
-                    documentos sea interpretado correctamente como código HTML, se debe
-                    agregar la declaración
-                    <code>< !DOCTYPE ></code> al comienzo del archivo. Esta declaración,
-                    similar en formato a las etiquetas HTML, se requiere al comienzo de cada
-                    documento para ayudar al navegador a decidir cómo debe generar la página
-                    web.
-                </p>
-                <p>
-                    Los elementos HTML conforman una estructura de tipo árbol con el elemento
-                    <code>< html ></code> como su raíz. Esta estructura presenta múltiples niveles de organización,
-                    con algunos elementos a cargo de definir secciones generales del documento y
-                    otros encargados de representar secciones menores o contenido. Los
-                    siguientes son los elementos disponibles para definir la columna vertebral de la
-                    estructura y facilitar la información que el navegador necesita para mostrar la
-                    página en la pantalla.
-                </p>
-                <table>
-                    <tr>
-                        <td><code>< html ></code></td>
-                        <td>Este elemento delimita el código HTML. Puede incluir el
-                            atributo lang para definir el idioma del contenido del
-                            documento.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< head ></code></td>
-                        <td>Este elemento se usa para definir la información
-                            necesaria para configurar la página web, como el título,
-                            el tipo de codificación de caracteres y los archivos
-                            externos requeridos por el documento.</td>
-                    </tr>
-                    <tr>
-                        <td><code>< body ></code></td>
-                        <td>Este elemento delimita el contenido del documento (la
-                            parte visible de la página).</td>
-                    </tr>
-                </table>
-                <p>
-                    El código HTML insertado entre las etiquetas <code>< html ></html></code> se tiene que dividir en
-                    dos
-                    secciones principales: la cabecera y el cuerpo. Por supuesto, la cabecera va
-                    primero y, al igual que el resto de los elementos estructurales, está compuesta
-                    por etiquetas de apertura y cierre.
-                </p>
-                <p>
-                    Entre las etiquetas
+                        <tr>
+                            <td><code>< aside ></code></td>
+                            <td>Define el contenido lateral del contenedor de una página
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< audio ></code></td>
+                            <td>Define contenido de sonido</td>
+                        </tr>
+                        <tr>
+                            <td><code>< b ></code></td>
+                            <td>Define texto en negrita
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< blockquote ></code></td>
+                            <td>Define una sección que tiene otra fuente</td>
+                        </tr>
+                        <tr>
+                            <td><code>< body ></code></td>
+                            <td>Define el cuerpo del documento</td>
+                        </tr>
+                        <tr>
+                            <td><code>< br ></code></td>
+                            <td>Define un salto de línea</td>
+                        </tr>
+                        <tr>
+                            <td><code>< button ></code></td>
+                            <td>Define un botón clickeable
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< canvas ></code></td>
+                            <td>Se usa para dibujar gráficos en pantalla</td>
+                        </tr>
+                        <tr>
+                            <td><code>< caption ></code></td>
+                            <td>Define el título de una tabla</td>
+                        </tr>
+                        <tr>
+                            <td><code>< code ></code></td>
+                            <td>Define un trozo de código de programación</td>
+                        </tr>
+                        <tr>
+                            <td><code>< datalist ></code></td>
+                            <td>Especifica en un input una lista predefinida de opciones</td>
+                        </tr>
+                        <tr>
+                            <td><code>< div ></code></td>
+                            <td>Define una sección en un documento</td>
+                        </tr>
+                        <tr>
+                            <td><code>< embed ></code></td>
+                            <td>Define el contenedor de una aplicación externa (no HTML)</td>
+                        </tr>
+                        <tr>
+                            <td><code>< fieldset ></code></td>
+                            <td>Grupo de elementos relacionados en un formulario
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< figure ></figure></code></td>
+                            <td>Especifica autocontenido</td>
+                        </tr>
+                        <tr>
+                            <td><code>< footer ></code></td>
+                            <td>Define el pie de página de un documento</td>
+                        </tr>
+                        <tr>
+                            <td><code>< form ></code></td>
+                            <td>Define un formulario html</td>
+                        </tr>
+                        <tr>
+                            <td><code>< h1 > a < h6 ></code></td>
+                            <td>Define encabezados o títulos</td>
+                        </tr>
+                        <tr>
+                            <td><code>< head ></code></td>
+                            <td>Define información acerca del documento</td>
+                        </tr>
+                        <tr>
+                            <td><code>< header ></code></td>
+                            <td>Define la sección de encabezado del documento</td>
+                        </tr>
+                        <tr>
+                            <td><code>< hr ></code></td>
+                            <td>Define un cambio de temática a partir de una línea dibujada</td>
+                        </tr>
+                        <tr>
+                            <td><code>< html ></code></td>
+                            <td>Define la raíz del documento</td>
+                        </tr>
+                        <tr>
+                            <td><code>< i ></code></td>
+                            <td>Define una parte del texto de modo alternativo</td>
+                        </tr>
+                        <tr>
+                            <td><code>< iframe ></code></td>
+                            <td>Define un frame en línea</td>
+                        </tr>
+                        <tr>
+                            <td><code>< img ></code></td>
+                            <td>Define una imagen</td>
+                        </tr>
+                        <tr>
+                            <td><code>< input ></code></td>
+                            <td>Define un control de entrada de texto</td>
+                        </tr>
+                        <tr>
+                            <td><code>< li ></code></td>
+                            <td>Define un ítem de una lista</td>
+                        </tr>
+                        <tr>
+                            <td><code>< link ></code></td>
+                            <td>Define la relación entre un documento y un recurso externo
+                                (generalmente con hojas de estilo)</td>
+                        </tr>
+                        <tr>
+                            <td><code>< meta ></code></td>
+                            <td>Define un metadato de un documento</td>
+                        </tr>
+                        <tr>
+                            <td><code>< nav ></code></td>
+                            <td>Define un link de navegación</td>
+                        </tr>
+                        <tr>
+                            <td><code>< ol ></code></td>
+                            <td>Define una lista ordenada</td>
+                        </tr>
+                        <tr>
+                            <td><code>< optgroup ></code></td>
+                            <td>Define un grupo de opciones relacionadas en una lista desplegable</td>
+                        </tr>
+                        <tr>
+                            <td><code>< option ></code></td>
+                            <td>Define una opción en una lista desplegable</td>
+                        </tr>
+                        <tr>
+                            <td><code>< p ></code></td>
+                            <td>Define un párrafo</td>
+                        </tr>
+                        <tr>
+                            <td><code>< param ></code></td>
+                            <td>Define un parámetro para un objeto</td>
+                        </tr>
+                        <tr>
+                            <td><code>< "script" ></code></td>
+                            <td>Define un script del lado cliente</td>
+                        </tr>
+                        <tr>
+                            <td><code>< section ></code></td>
+                            <td>Define una sección de un documento</td>
+                        </tr>
+                        <tr>
+                            <td><code>< select ></code></td>
+                            <td>Define un drop-down list</td>
+                        </tr>
+                        <tr>
+                            <td><code>< span ></code></td>
+                            <td>Define una pequeña sección de un documento</td>
+                        </tr>
+                        <tr>
+                            <td><code>< strong ></code></td>
+                            <td>Define un texto en negrita</td>
+                        </tr>
+                        <tr>
+                            <td><code>< "style" ></code></td>
+                            <td>Define un estilo para la información de un documento</td>
+                        </tr>
+                        <tr>
+                            <td><code>< table ></code></td>
+                            <td>Define una tabla</td>
+                        </tr>
+                        <tr>
+                            <td><code>< tbody ></code></td>
+                            <td>Define el cuerpo de una tabla</td>
+                        </tr>
+                        <tr>
+                            <td><code>< td ></code></td>
+                            <td>Define una celda en una tabla</td>
+                        </tr>
+                        <tr>
+                            <td><code>< textarea ></code></td>
+                            <td>Define un control de entrada de múltiples líneas</td>
+                        </tr>
+                        <tr>
+                            <td><code>< tfoot ></code></td>
+                            <td>Agrupa los footer contenidos en una tabla</td>
+                        </tr>
+                        <tr>
+                            <td><code>< th ></code></td>
+                            <td>Define una celda de encabezado en una tabla</td>
+                        </tr>
+                        <tr>
+                            <td><code>< thead ></code></td>
+                            <td>Agrupa los encabezados de una tabla</td>
+                        </tr>
+                        <tr>
+                            <td><code>< time ></code></td>
+                            <td>Define fecha / hora</td>
+                        </tr>
+                        <tr>
+                            <td><code>< title ></code></td>
+                            <td>Define un título para el documento</td>
+                        </tr>
+                        <tr>
+                            <td><code>< tr ></code></td>
+                            <td>Define una fila en una tabla</td>
+                        </tr>
+                        <tr>
+                            <td><code>< ul ></code></td>
+                            <td>Define una lista desordenada</td>
+                        </tr>
+                        <tr>
+                            <td><code>< video ></code></td>
+                            <td>Define un vídeo o película</td>
+                        </tr>
+                    </table>
+                    <p>
+                        Estas etiquetas o tags se componen y contienen otras propiedades, como son
+                        los atributos y el contenido.
+                    </p>
+                    <p>
+                        HTML define un total de 91 etiquetas, de las cuales 10 se consideran obsoletas.
+                        Sin embargo, una etiqueta por sí sola a veces no contiene la suficiente
+                        información para estar completamente definida. Para ello se cuenta con los
+                        atributos: pares nombre-valor separados por "=" y escritos en la etiqueta inicial
+                        de un elemento después del nombre del elemento. El valor puede estar
+                        encerrado entre "comillas dobles" o 'simples'. Existen, también, algunos
+                        atributos que afectan al elemento por su presencia en la etiqueta de inicio,
+                        como puede ser el atributo ismap para el elemento <code>< img ></code>.
+                    </p>
+                    <p>
+                        Esta sería la estructura general de una línea de código en lenguaje HTML:
+                    </p>
+                    <img src="img/2 - HTML.png" alt="">
+                    <p>
+                        O lo que es lo mismo, con un ejemplo:
+                    </p>
+                    <img src="img/3 - HTML.png" alt="">
+                    <p>
+                        Donde:
+                    </p>
+                    <ul>
+                        <li><code>< a ></code> es la etiqueta o tag inicial y <code>< /a ></code> la etiqueta de cierre
+                        </li>
+                        <li>href y target son los atributos.</li>
+                        <li>http://www.enlace.com y _blank son las variables.</li>
+                        <li>Ejemplo de enlace es el contenido.</li>
+                    </ul>
+                    <p>
+                        Aunque también existen elementos vacíos que no necesitan tag de cierre, cuya
+                        estructura sería ésta:
+                    </p>
+                    <img src="img/4 - HTML.png" alt="">
+                    <p>
+                        Estos elementos vacíos no constan de contenido, como por ejemplo, los tags
+                        <code>< br ></code> o <code>< img ></code>.
+                    </p>
+                    <h2>Estructura básica de un documento: html, head, body, meta, title, link</h2>
+                    <p>
+                        Debido a que los navegadores son capaces de procesar diferentes tipos de
+                        archivos, lo primero que se debe hacer en la construcción de un documento
+                        HTML es indicar su tipo. Para tener seguridad de que el contenido de los
+                        documentos sea interpretado correctamente como código HTML, se debe
+                        agregar la declaración
+                        <code>< !DOCTYPE ></code> al comienzo del archivo. Esta declaración,
+                        similar en formato a las etiquetas HTML, se requiere al comienzo de cada
+                        documento para ayudar al navegador a decidir cómo debe generar la página
+                        web.
+                    </p>
+                    <p>
+                        Los elementos HTML conforman una estructura de tipo árbol con el elemento
+                        <code>< html ></code> como su raíz. Esta estructura presenta múltiples niveles de organización,
+                        con algunos elementos a cargo de definir secciones generales del documento y
+                        otros encargados de representar secciones menores o contenido. Los
+                        siguientes son los elementos disponibles para definir la columna vertebral de la
+                        estructura y facilitar la información que el navegador necesita para mostrar la
+                        página en la pantalla.
+                    </p>
+                    <table>
+                        <tr>
+                            <td><code>< html ></code></td>
+                            <td>Este elemento delimita el código HTML. Puede incluir el
+                                atributo lang para definir el idioma del contenido del
+                                documento.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< head ></code></td>
+                            <td>Este elemento se usa para definir la información
+                                necesaria para configurar la página web, como el título,
+                                el tipo de codificación de caracteres y los archivos
+                                externos requeridos por el documento.</td>
+                        </tr>
+                        <tr>
+                            <td><code>< body ></code></td>
+                            <td>Este elemento delimita el contenido del documento (la
+                                parte visible de la página).</td>
+                        </tr>
+                    </table>
+                    <p>
+                        El código HTML insertado entre las etiquetas <code>< html ></html></code> se tiene que dividir
+                        en
+                        dos
+                        secciones principales: la cabecera y el cuerpo. Por supuesto, la cabecera va
+                        primero y, al igual que el resto de los elementos estructurales, está compuesta
+                        por etiquetas de apertura y cierre.
+                    </p>
+                    <p>
+                        Entre las etiquetas
 
-                    <code>< head ></code> es necesario definir el título de la página web,
-                    declarar el tipo de codificación de caracteres, facilitar información general
-                    acerca del documento, e incorporar los archivos externos con estilos y códigos
-                    necesarios para generar la página. Excepto por el título e iconos, el resto de la
-                    información insertada en medio de estas etiquetas no es visible para el usuario.
-                    Entre las etiquetas que son parte de la cabecera están descritas en la tabla
-                    siguiente.
-                </p>
-                <table>
-                    <tr>
-                        <td><code>< title ></code></td>
-                        <td>Este elemento define el título de la página.</td>
-                    </tr>
-                    <tr>
-                        <td><code>< base ></code></td>
-                        <td>Este elemento define la URL usada por el navegador
-                            para establecer la ubicación real de las URL relativas. El
-                            elemento debe incluir el atributo href para declarar la
-                            URL base. Cuando se declara este elemento, en lugar de
-                            la URL actual, el navegador usa la URL asignada al
-                            atributo href para completar las URL relativas.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< meta ></code></td>
-                        <td>Este elemento representa metadatos asociados con el
-                            documento, como la descripción del documento,
-                            palabras claves, el tipo de codificación de caracteres,
-                            etc. El elemento puede incluir los atributos name para
-                            describir el tipo de metadata, content para especificar el
-                            valor, y charset para declarar el tipo de codificación de
-                            caracteres a utilizar para procesar el contenido.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< link ></code></td>
-                        <td>Este elemento especifica la relación entre el documento
-                            y un recurso externo (generalmente usado para cargar
-                            archivos CSS). El elemento puede incluir los atributos
-                            href para declarar la ubicación del recurso, rel para
-                            definir el tipo de relación, media para especificar el
-                            medio al que el recurso está asociado (pantalla,
-                            impresora, etc.), y type y sizes para declarar el tipo de
-                            recurso y</td>
-                    </tr>
-                    <tr>
-                        <td><code>< "style" ></code></td>
-                        <td>Este elemento se usa para declarar estilos CSS dentro del documento</td>
-                    </tr>
-                    <tr>
-                        <td><code>< "script" ></code></td>
-                        <td>Este elemento se usa para cargar o declarar código
-                            JavaScript</td>
-                    </tr>
-                </table>
-                <h2>Estructura del cuerpo: header, nav, section, aside, footer</h2>
-                <p>
-                    HTML siempre ha ofrecido diferentes maneras de construir y organizar la
-                    información en el cuerpo del documento. Uno de los primeros elementos
-                    utilizados con este propósito fue
-                    <code>< table ></code> (tabla). Este elemento permitía a los
-                    desarrolladores organizar datos, textos, imágenes, así como herramientas en
-                    filas y columnas de celdas.
-                </p>
-                <p>
-                    Con la introducción de CSS, la estructura generada por estas tablas ya no
-                    resultaba práctica, por lo que los desarrolladores comenzaron a implementar un
-                    elemento más flexible llamado
-                    <code>< div ></code> (división). Pero <code>< div ></code>, así como <code>< table ></code>, no
-                    facilita demasiada información acerca de las partes del cuerpo que representa.
-                    Cualquier cosa, desde imágenes hasta menús, texto, enlaces, códigos o
-                    formularios, se puede insertar entre las etiquetas de apertura y cierre de un
-                    elemento < div>.
-                </p>
-                <p>
-                    En otras palabras, el nombre div solo especifica una división en el cuerpo, como
-                    una celda en una tabla, pero no ofrece ninguna pista acerca del tipo de división
-                    que está creando, cuál es su propósito o qué contiene. Esta es la razón por la
-                    que HTML5 introdujo nuevos elementos con nombres más descriptivos que
-                    permiten a los desarrolladores identificar cada parte del documento. Estos
-                    elementos no solo ayudan a los desarrolladores a crear el documento, sino que
-                    además informan al navegador sobre el propósito de cada sección. La siguiente
-                    lista incluye todos los elementos disponibles para definir la estructura del
-                    cuerpo.
-                </p>
-                <table>
-                    <tr>
-                        <td><code>< div ></code></td>
-                        <td>Este elemento define una división genérica. Se usa
-                            cuando no se puede aplicar ningún otro elemento.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< main ></code></td>
-                        <td>Este elemento define una división que contiene el
-                            contenido principal del documento (el contenido que
-                            representa el tema central de la página).</td>
-                    </tr>
-                    <tr>
-                        <td><code>< nav ></code></td>
-                        <td>Este elemento define una división que contiene ayuda
-                            para la navegación, como el menú principal de la página
-                            o bloques de enlaces necesarios para navegar en el sitio
-                            web.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< section ></code></td>
-                        <td>Este elemento define una sección genérica. Se usa
-                            frecuentemente para separar contenido temático, o para
-                            generar columnas o bloques que ayudan a organizar el
-                            contenido principal.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< aside ></code></td>
-                        <td>Este elemento define una división que contiene
-                            información relacionada con el contenido principal pero
-                            que no es parte del mismo, como referencias a artículos
-                            o enlaces que apuntan a publicaciones anteriores.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< article ></code></td>
-                        <td>Este elemento representa un artículo independiente,
-                            como un mensaje de foro, el artículo de una revista, una
-                            entrada de un blog, un comentario, etc.</td>
-                    </tr>
-                    <tr>
-                        <td><code>< header ></code></td>
-                        <td>Este elemento define la cabecera del cuerpo o de
-                            secciones dentro del cuerpo.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< footer ></code></td>
-                        <td>Este elemento define el pie del cuerpo o de secciones
-                            dentro del cuerpo.</td>
-                    </tr>
-                </table>
-                <p>
-                    Estos elementos han sido definidos con el propósito de representar secciones
-                    específicas de una página web. Aunque son flexibles y se pueden implementar
-                    en diferentes partes del diseño, todos siguen un patrón que se encuentra
-                    comúnmente en la mayoría de los sitios web. La figura que se muestra a
-                    continuación ilustra este tipo de diseño.
-                </p>
-                <img src="img/5 - HTML.png" alt="">
-                <p>
-                    A pesar de que cada desarrollador crea sus propios diseños, en general se
-                    puede describir todo sitio web considerando estas secciones. En la barra
-                    superior, descrita como cabecera en la figura ubicamos el logo, el nombre del
-                    sitio, los subtítulos y una descripción breve del sitio o página web en cuestión.
-                    En la barra de navegación situada debajo es donde la mayoría de los
-                    desarrolladores ofrecen un menú o una lista de enlaces para navegar en el sitio.
-                    El contenido relevante de la página se ubica en el medio del diseño, donde
-                    generalmente existen artículos o noticias, y también enlaces a documentos
-                    relacionados o recursos. En el ejemplo esta sección se ha dividido en dos
-                    columnas, información principal y barra lateral, pero los diseñadores la adaptan
-                    a sus necesidades insertando columnas adicionales o dividiendo las columnas
-                    en bloques más pequeños. En la parte inferior de un diseño tradicional, existe
-                    otra barra llamada barra institucional. Se llama de este modo porque en este
-                    área es donde se muestra la información general acerca del sitio web, el autor,
-                    la compañía, los enlaces relacionados con reglas de uso, términos y
-                    condiciones, el mapa del sitio, etc.
+                        <code>< head ></code> es necesario definir el título de la página web,
+                        declarar el tipo de codificación de caracteres, facilitar información general
+                        acerca del documento, e incorporar los archivos externos con estilos y códigos
+                        necesarios para generar la página. Excepto por el título e iconos, el resto de la
+                        información insertada en medio de estas etiquetas no es visible para el usuario.
+                        Entre las etiquetas que son parte de la cabecera están descritas en la tabla
+                        siguiente.
+                    </p>
+                    <table>
+                        <tr>
+                            <td><code>< title ></code></td>
+                            <td>Este elemento define el título de la página.</td>
+                        </tr>
+                        <tr>
+                            <td><code>< base ></code></td>
+                            <td>Este elemento define la URL usada por el navegador
+                                para establecer la ubicación real de las URL relativas. El
+                                elemento debe incluir el atributo href para declarar la
+                                URL base. Cuando se declara este elemento, en lugar de
+                                la URL actual, el navegador usa la URL asignada al
+                                atributo href para completar las URL relativas.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< meta ></code></td>
+                            <td>Este elemento representa metadatos asociados con el
+                                documento, como la descripción del documento,
+                                palabras claves, el tipo de codificación de caracteres,
+                                etc. El elemento puede incluir los atributos name para
+                                describir el tipo de metadata, content para especificar el
+                                valor, y charset para declarar el tipo de codificación de
+                                caracteres a utilizar para procesar el contenido.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< link ></code></td>
+                            <td>Este elemento especifica la relación entre el documento
+                                y un recurso externo (generalmente usado para cargar
+                                archivos CSS). El elemento puede incluir los atributos
+                                href para declarar la ubicación del recurso, rel para
+                                definir el tipo de relación, media para especificar el
+                                medio al que el recurso está asociado (pantalla,
+                                impresora, etc.), y type y sizes para declarar el tipo de
+                                recurso y</td>
+                        </tr>
+                        <tr>
+                            <td><code>< "style" ></code></td>
+                            <td>Este elemento se usa para declarar estilos CSS dentro del documento</td>
+                        </tr>
+                        <tr>
+                            <td><code>< "script" ></code></td>
+                            <td>Este elemento se usa para cargar o declarar código
+                                JavaScript</td>
+                        </tr>
+                    </table>
+                    <h2>Estructura del cuerpo: header, nav, section, aside, footer</h2>
+                    <p>
+                        HTML siempre ha ofrecido diferentes maneras de construir y organizar la
+                        información en el cuerpo del documento. Uno de los primeros elementos
+                        utilizados con este propósito fue
+                        <code>< table ></code> (tabla). Este elemento permitía a los
+                        desarrolladores organizar datos, textos, imágenes, así como herramientas en
+                        filas y columnas de celdas.
+                    </p>
+                    <p>
+                        Con la introducción de CSS, la estructura generada por estas tablas ya no
+                        resultaba práctica, por lo que los desarrolladores comenzaron a implementar un
+                        elemento más flexible llamado
+                        <code>< div ></code> (división). Pero <code>< div ></code>, así como <code>< table ></code>, no
+                        facilita demasiada información acerca de las partes del cuerpo que representa.
+                        Cualquier cosa, desde imágenes hasta menús, texto, enlaces, códigos o
+                        formularios, se puede insertar entre las etiquetas de apertura y cierre de un
+                        elemento < div>.
+                    </p>
+                    <p>
+                        En otras palabras, el nombre div solo especifica una división en el cuerpo, como
+                        una celda en una tabla, pero no ofrece ninguna pista acerca del tipo de división
+                        que está creando, cuál es su propósito o qué contiene. Esta es la razón por la
+                        que HTML5 introdujo nuevos elementos con nombres más descriptivos que
+                        permiten a los desarrolladores identificar cada parte del documento. Estos
+                        elementos no solo ayudan a los desarrolladores a crear el documento, sino que
+                        además informan al navegador sobre el propósito de cada sección. La siguiente
+                        lista incluye todos los elementos disponibles para definir la estructura del
+                        cuerpo.
+                    </p>
+                    <table>
+                        <tr>
+                            <td><code>< div ></code></td>
+                            <td>Este elemento define una división genérica. Se usa
+                                cuando no se puede aplicar ningún otro elemento.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< main ></code></td>
+                            <td>Este elemento define una división que contiene el
+                                contenido principal del documento (el contenido que
+                                representa el tema central de la página).</td>
+                        </tr>
+                        <tr>
+                            <td><code>< nav ></code></td>
+                            <td>Este elemento define una división que contiene ayuda
+                                para la navegación, como el menú principal de la página
+                                o bloques de enlaces necesarios para navegar en el sitio
+                                web.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< section ></code></td>
+                            <td>Este elemento define una sección genérica. Se usa
+                                frecuentemente para separar contenido temático, o para
+                                generar columnas o bloques que ayudan a organizar el
+                                contenido principal.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< aside ></code></td>
+                            <td>Este elemento define una división que contiene
+                                información relacionada con el contenido principal pero
+                                que no es parte del mismo, como referencias a artículos
+                                o enlaces que apuntan a publicaciones anteriores.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< article ></code></td>
+                            <td>Este elemento representa un artículo independiente,
+                                como un mensaje de foro, el artículo de una revista, una
+                                entrada de un blog, un comentario, etc.</td>
+                        </tr>
+                        <tr>
+                            <td><code>< header ></code></td>
+                            <td>Este elemento define la cabecera del cuerpo o de
+                                secciones dentro del cuerpo.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< footer ></code></td>
+                            <td>Este elemento define el pie del cuerpo o de secciones
+                                dentro del cuerpo.</td>
+                        </tr>
+                    </table>
+                    <p>
+                        Estos elementos han sido definidos con el propósito de representar secciones
+                        específicas de una página web. Aunque son flexibles y se pueden implementar
+                        en diferentes partes del diseño, todos siguen un patrón que se encuentra
+                        comúnmente en la mayoría de los sitios web. La figura que se muestra a
+                        continuación ilustra este tipo de diseño.
+                    </p>
+                    <img src="img/5 - HTML.png" alt="">
+                    <p>
+                        A pesar de que cada desarrollador crea sus propios diseños, en general se
+                        puede describir todo sitio web considerando estas secciones. En la barra
+                        superior, descrita como cabecera en la figura ubicamos el logo, el nombre del
+                        sitio, los subtítulos y una descripción breve del sitio o página web en cuestión.
+                        En la barra de navegación situada debajo es donde la mayoría de los
+                        desarrolladores ofrecen un menú o una lista de enlaces para navegar en el sitio.
+                        El contenido relevante de la página se ubica en el medio del diseño, donde
+                        generalmente existen artículos o noticias, y también enlaces a documentos
+                        relacionados o recursos. En el ejemplo esta sección se ha dividido en dos
+                        columnas, información principal y barra lateral, pero los diseñadores la adaptan
+                        a sus necesidades insertando columnas adicionales o dividiendo las columnas
+                        en bloques más pequeños. En la parte inferior de un diseño tradicional, existe
+                        otra barra llamada barra institucional. Se llama de este modo porque en este
+                        área es donde se muestra la información general acerca del sitio web, el autor,
+                        la compañía, los enlaces relacionados con reglas de uso, términos y
+                        condiciones, el mapa del sitio, etc.
 
-                </p>
-                <p>
-                    Como se mencionó anteriormente, los elementos de HTML5 se han diseñado
-                    siguiendo este patrón. En la figura siguiente se aplican los elementos
-                    introducidos anteriormente para definir el diseño de la figura anterior.
-                </p>
-                <img src="img/6 - HTML.png" alt="">
-                <h2>Encabezados: H1...H6</h2>
-                <p>
-                    Las etiquetas
-                    <code>< h1 ></code> a <code>< h6 ></code> se utilizan para definir encabezados HTML. En el caso
-                    de <code>< h1 ></code>, ésta define el encabezado más importante, mientras que <code>< h6 ></code>
-                    define el
-                    encabezado menos importante.
-                </p>
-                <p>
-                    Se debe utilizar solo un
-                    <code>< h1 ></code> por página; esto debe representar el encabezado /
-                    tema principal de toda la página. Además, no se deben omitir los niveles de
-                    encabezado: se recomienda comenzar con <code>< h1 ></code>, luego usar <code>< h2 ></code> y así
-                    sucesivamente.
-                </p>
-                <h2>Enlaces o hipervínculos</h2>
-                <p>
-                    Los enlaces o hipervínculos, también llamados hipertextos son los textos o los
-                    objetos sobre los que es posible hacer clic para que redirijan al usuario a otra
-                    parte del documento, a otra página web en el mismo sitio o a otra página de
-                    Internet, entre otras funciones.
-                </p>
-                <p>
-                    Cuando un visitante hace clic en el hipervínculo, el destino se mostrará en su
-                    navegador web, se abrirá o se ejecutará, en función del tipo de destino. El
-                    destino es con frecuencia otra página web, pero también puede ser una
-                    imagen, un archivo multimedia, un documento de Microsoft Office, un
-                    documento PDF, una dirección de correo electrónico o un programa.
+                    </p>
+                    <p>
+                        Como se mencionó anteriormente, los elementos de HTML5 se han diseñado
+                        siguiendo este patrón. En la figura siguiente se aplican los elementos
+                        introducidos anteriormente para definir el diseño de la figura anterior.
+                    </p>
+                    <img src="img/6 - HTML.png" alt="">
+                    <h2>Encabezados: H1...H6</h2>
+                    <p>
+                        Las etiquetas
+                        <code>< h1 ></code> a <code>< h6 ></code> se utilizan para definir encabezados HTML. En el caso
+                        de <code>< h1 ></code>, ésta define el encabezado más importante, mientras que
+                        <code>< h6 ></code>
+                        define el
+                        encabezado menos importante.
+                    </p>
+                    <p>
+                        Se debe utilizar solo un
+                        <code>< h1 ></code> por página; esto debe representar el encabezado /
+                        tema principal de toda la página. Además, no se deben omitir los niveles de
+                        encabezado: se recomienda comenzar con <code>< h1 ></code>, luego usar <code>< h2 ></code> y así
+                        sucesivamente.
+                    </p>
+                    <h2>Enlaces o hipervínculos</h2>
+                    <p>
+                        Los enlaces o hipervínculos, también llamados hipertextos son los textos o los
+                        objetos sobre los que es posible hacer clic para que redirijan al usuario a otra
+                        parte del documento, a otra página web en el mismo sitio o a otra página de
+                        Internet, entre otras funciones.
+                    </p>
+                    <p>
+                        Cuando un visitante hace clic en el hipervínculo, el destino se mostrará en su
+                        navegador web, se abrirá o se ejecutará, en función del tipo de destino. El
+                        destino es con frecuencia otra página web, pero también puede ser una
+                        imagen, un archivo multimedia, un documento de Microsoft Office, un
+                        documento PDF, una dirección de correo electrónico o un programa.
 
-                </p>
-                <p>
-                    Por tanto, con los hipervínculos se puede establecer “saltos” desde una página
-                    a otra, incluso a puntos concretos dentro de páginas con contenidos extensos.
-                    Los hipervínculos pueden asociarse a imágenes o a textos de modo que haciendo clic sobre ellos con
-                    el botón izquierdo del ratón se accede
-                    automáticamente al destino asociado a ellos.
+                    </p>
+                    <p>
+                        Por tanto, con los hipervínculos se puede establecer “saltos” desde una página
+                        a otra, incluso a puntos concretos dentro de páginas con contenidos extensos.
+                        Los hipervínculos pueden asociarse a imágenes o a textos de modo que haciendo clic sobre ellos
+                        con
+                        el botón izquierdo del ratón se accede
+                        automáticamente al destino asociado a ellos.
 
-                </p>
-                <p>
-                    Lo más habitual es que el cursor tome la forma de una pequeña mano cuando
-                    pasa sobre un hipervínculo.
-                </p>
-                <p>
-                    Existen distintos tipos de enlaces:
-                </p>
-                <ul>
-                    <li><strong>Hipervínculos locales:</strong> Los hipervínculos locales o marcadores son
-                        enlaces dentro de la misma página. Es decir, al hacer clic en uno de ellos
-                        llevará al usuario a una posición distinta dentro de la misma página que
-                        está visualizando.
-                    </li>
-                    <li>
-                        <strong>Hipervínculos externos:</strong> Un hipervínculo externo es un vínculo a otro
-                        sitio web en Internet (sitio externo). Es un vínculo a cualquier otro lugar
-                        fuera del sitio actual. Al agregar un vínculo externo, se escribe la
-                        dirección completa de la página incluido http://www.... Estas rutas que
-                        incluyen http://... se denominan rutas absolutas.
+                    </p>
+                    <p>
+                        Lo más habitual es que el cursor tome la forma de una pequeña mano cuando
+                        pasa sobre un hipervínculo.
+                    </p>
+                    <p>
+                        Existen distintos tipos de enlaces:
+                    </p>
+                    <ul>
+                        <li><strong>Hipervínculos locales:</strong> Los hipervínculos locales o marcadores son
+                            enlaces dentro de la misma página. Es decir, al hacer clic en uno de ellos
+                            llevará al usuario a una posición distinta dentro de la misma página que
+                            está visualizando.
+                        </li>
+                        <li>
+                            <strong>Hipervínculos externos:</strong> Un hipervínculo externo es un vínculo a otro
+                            sitio web en Internet (sitio externo). Es un vínculo a cualquier otro lugar
+                            fuera del sitio actual. Al agregar un vínculo externo, se escribe la
+                            dirección completa de la página incluido http://www.... Estas rutas que
+                            incluyen http://... se denominan rutas absolutas.
 
-                    </li>
-                    <li>
-                        <strong>Imágenes como enlaces:</strong> Para poner una imagen como enlace basta con
-                        crear un enlace y añadir en su interior en lugar de texto, una imagen
-                    </li>
-                </ul>
-                <h2>Imágenes</h2>
-                <p>
-                    Las imágenes pueden se pueden considerar el segundo medio más importante
-                    en la Web. HTML incluye los siguientes elementos para introducir imágenes en
-                    los documentos que conforman un portal.
+                        </li>
+                        <li>
+                            <strong>Imágenes como enlaces:</strong> Para poner una imagen como enlace basta con
+                            crear un enlace y añadir en su interior en lugar de texto, una imagen
+                        </li>
+                    </ul>
+                    <h2>Imágenes</h2>
+                    <p>
+                        Las imágenes pueden se pueden considerar el segundo medio más importante
+                        en la Web. HTML incluye los siguientes elementos para introducir imágenes en
+                        los documentos que conforman un portal.
 
-                </p>
-                <table>
-                    <tr>
-                        <td><code>< img ></code></td>
-                        <td>Este elemento inserta una imagen en el documento. El
-                            elemento requiere del atributo src para especificar la
-                            URL del archivo con la imagen que queremos incorporar.</td>
-                    </tr>
-                    <tr>
-                        <td><code>< picture ></code></td>
-                        <td>Este elemento inserta una imagen en el documento.
-                            Trabaja junto con el elemento
-                            <code>< source ></code> para ofrecer
-                            múltiples imágenes en diferentes resoluciones. Es útil
-                            para crear sitios web adaptables.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< figure ></code></td>
-                        <td>Este elemento representa contenido asociado con el
-                            contenido principal, pero que se puede eliminar sin que
-                            se vea afectado, como fotos, vídeos, etc.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< figcaption ></code></td>
-                        <td>Este elemento introduce un título para el elemento <code>< figure ></code>.
-                        </td>
-                    </tr>
-                </table>
-                <h2>Listas anidadas</h2>
-                <p>
-                    A menudo la información se debe representar como una lista de ítems. Por
-                    ejemplo, muchos sitios web incluyen listados de libros, películas, o términos y
-                    descripciones. Para crear estos listados, HTML ofrece los siguientes elementos.
-                </p>
-                <table>
-                    <tr>
-                        <td><code>< ul ></code></td>
-                        <td>Este elemento crea una lista de ítems sin orden. Está
-                            compuesto por etiquetas de apertura y cierre para
-                            agrupar los ítems (<code>< ul ></code> y <code>< /ul ></code>) y trabaja junto con el
-                            elemento <code>< li ></code> para definir cada uno de los ítems de la
-                            lista
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><code>< ol ></code></td>
-                        <td>Este elemento crea una lista ordenada de ítems. Está
-                            compuesto por etiquetas de apertura y cierre para
-                            agrupar los ítems ( <code>< ol ></code> y <code>< /ol ></code>) y trabaja junto con el
-                            elemento <code>< li ></code> para definir los ítems de la lista. Este
-                            elemento puede incluir los atributos <strong>reversed</strong> para
-                            invertir el orden de los indicadores, <strong>start</strong> para determinar
-                            el valor desde el cual los indicadores tienen que
-                            comenzar a contar y <strong>type</strong> para determinar el tipo de
-                            indicador que queremos usar. Los valores disponibles
-                            para el atributo <strong>type</strong> son <strong>1</strong> (números), a (letras
-                            minúsculas), <strong>A</strong> (letras mayúsculas), <strong>i</strong> (números romanos
-                            en minúsculas) e <strong>I</strong> (números romanos en mayúsculas).
-                        </td>
-                    </tr>
-                </table>
-            </article>
-        </section>
-    </main>
-    <footer>
-        Creado por Luis Zambrano 2023 &copy;
-    </footer>
+                    </p>
+                    <table>
+                        <tr>
+                            <td><code>< img ></code></td>
+                            <td>Este elemento inserta una imagen en el documento. El
+                                elemento requiere del atributo src para especificar la
+                                URL del archivo con la imagen que queremos incorporar.</td>
+                        </tr>
+                        <tr>
+                            <td><code>< picture ></code></td>
+                            <td>Este elemento inserta una imagen en el documento.
+                                Trabaja junto con el elemento
+                                <code>< source ></code> para ofrecer
+                                múltiples imágenes en diferentes resoluciones. Es útil
+                                para crear sitios web adaptables.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< figure ></code></td>
+                            <td>Este elemento representa contenido asociado con el
+                                contenido principal, pero que se puede eliminar sin que
+                                se vea afectado, como fotos, vídeos, etc.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< figcaption ></code></td>
+                            <td>Este elemento introduce un título para el elemento <code>< figure ></code>.
+                            </td>
+                        </tr>
+                    </table>
+                    <h2>Listas anidadas</h2>
+                    <p>
+                        A menudo la información se debe representar como una lista de ítems. Por
+                        ejemplo, muchos sitios web incluyen listados de libros, películas, o términos y
+                        descripciones. Para crear estos listados, HTML ofrece los siguientes elementos.
+                    </p>
+                    <table>
+                        <tr>
+                            <td><code>< ul ></code></td>
+                            <td>Este elemento crea una lista de ítems sin orden. Está
+                                compuesto por etiquetas de apertura y cierre para
+                                agrupar los ítems (<code>< ul ></code> y <code>< /ul ></code>) y trabaja junto con el
+                                elemento <code>< li ></code> para definir cada uno de los ítems de la
+                                lista
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>< ol ></code></td>
+                            <td>Este elemento crea una lista ordenada de ítems. Está
+                                compuesto por etiquetas de apertura y cierre para
+                                agrupar los ítems ( <code>< ol ></code> y <code>< /ol ></code>) y trabaja junto con el
+                                elemento <code>< li ></code> para definir los ítems de la lista. Este
+                                elemento puede incluir los atributos <strong>reversed</strong> para
+                                invertir el orden de los indicadores, <strong>start</strong> para determinar
+                                el valor desde el cual los indicadores tienen que
+                                comenzar a contar y <strong>type</strong> para determinar el tipo de
+                                indicador que queremos usar. Los valores disponibles
+                                para el atributo <strong>type</strong> son <strong>1</strong> (números), a (letras
+                                minúsculas), <strong>A</strong> (letras mayúsculas), <strong>i</strong> (números romanos
+                                en minúsculas) e <strong>I</strong> (números romanos en mayúsculas).
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+        </main>
+        <footer>
+            Creado por Luis Zambrano 2023 &copy;
+        </footer>
+    </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
