@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <title>Manual de HTML</title>
 </head>
 
@@ -736,12 +737,45 @@
                     </tr>
                 </table>
                 <h2>Listas anidadas</h2>
+                <p>
+                    A menudo la información se debe representar como una lista de ítems. Por
+                    ejemplo, muchos sitios web incluyen listados de libros, películas, o términos y
+                    descripciones. Para crear estos listados, HTML ofrece los siguientes elementos.
+                </p>
+                <table>
+                    <tr>
+                        <td><code>< ul ></code></td>
+                        <td>Este elemento crea una lista de ítems sin orden. Está
+                            compuesto por etiquetas de apertura y cierre para
+                            agrupar los ítems (<code>< ul ></code> y <code>< /ul ></code>) y trabaja junto con el
+                            elemento <code>< li ></code> para definir cada uno de los ítems de la
+                            lista
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>< ol ></code></td>
+                        <td>Este elemento crea una lista ordenada de ítems. Está
+                            compuesto por etiquetas de apertura y cierre para
+                            agrupar los ítems ( <code>< ol ></code> y <code>< /ol ></code>) y trabaja junto con el
+                            elemento <code>< li ></code> para definir los ítems de la lista. Este
+                            elemento puede incluir los atributos <strong>reversed</strong> para
+                            invertir el orden de los indicadores, <strong>start</strong> para determinar
+                            el valor desde el cual los indicadores tienen que
+                            comenzar a contar y <strong>type</strong> para determinar el tipo de
+                            indicador que queremos usar. Los valores disponibles
+                            para el atributo <strong>type</strong> son <strong>1</strong> (números), a (letras
+                            minúsculas), <strong>A</strong> (letras mayúsculas), <strong>i</strong> (números romanos
+                            en minúsculas) e <strong>I</strong> (números romanos en mayúsculas).
+                        </td>
+                    </tr>
+                </table>
             </article>
         </section>
     </main>
     <footer>
         Creado por Luis Zambrano 2023 &copy;
     </footer>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
