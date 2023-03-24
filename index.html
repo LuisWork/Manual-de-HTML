@@ -517,6 +517,86 @@
                             JavaScript</td>
                     </tr>
                 </table>
+                <h2>Estructura del cuerpo: header, nav, section, aside, footer</h2>
+                <p>
+                    HTML siempre ha ofrecido diferentes maneras de construir y organizar la
+                    información en el cuerpo del documento. Uno de los primeros elementos
+                    utilizados con este propósito fue
+                    <code>< table ></code> (tabla). Este elemento permitía a los
+                    desarrolladores organizar datos, textos, imágenes, así como herramientas en
+                    filas y columnas de celdas.
+                </p>
+                <p>
+                    Con la introducción de CSS, la estructura generada por estas tablas ya no
+                    resultaba práctica, por lo que los desarrolladores comenzaron a implementar un
+                    elemento más flexible llamado
+                    <code>< div ></code> (división). Pero <code>< div ></code>, así como <code>< table ></code>, no
+                    facilita demasiada información acerca de las partes del cuerpo que representa.
+                    Cualquier cosa, desde imágenes hasta menús, texto, enlaces, códigos o
+                    formularios, se puede insertar entre las etiquetas de apertura y cierre de un
+                    elemento < div>.
+                </p>
+                <p>
+                    En otras palabras, el nombre div solo especifica una división en el cuerpo, como
+                    una celda en una tabla, pero no ofrece ninguna pista acerca del tipo de división
+                    que está creando, cuál es su propósito o qué contiene. Esta es la razón por la
+                    que HTML5 introdujo nuevos elementos con nombres más descriptivos que
+                    permiten a los desarrolladores identificar cada parte del documento. Estos
+                    elementos no solo ayudan a los desarrolladores a crear el documento, sino que
+                    además informan al navegador sobre el propósito de cada sección. La siguiente
+                    lista incluye todos los elementos disponibles para definir la estructura del
+                    cuerpo.
+                </p>
+                <table>
+                    <tr>
+                        <td><code>< div ></code></td>
+                        <td>Este elemento define una división genérica. Se usa
+                            cuando no se puede aplicar ningún otro elemento.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>< main ></code></td>
+                        <td>Este elemento define una división que contiene el
+                            contenido principal del documento (el contenido que
+                            representa el tema central de la página).</td>
+                    </tr>
+                    <tr>
+                        <td><code>< nav ></code></td>
+                        <td>Este elemento define una división que contiene ayuda
+                            para la navegación, como el menú principal de la página
+                            o bloques de enlaces necesarios para navegar en el sitio
+                            web.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>< section ></code></td>
+                        <td>Este elemento define una sección genérica. Se usa
+                            frecuentemente para separar contenido temático, o para
+                            generar columnas o bloques que ayudan a organizar el
+                            contenido principal.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>< aside ></code></td>
+                        <td>Este elemento define una división que contiene
+                            información relacionada con el contenido principal pero
+                            que no es parte del mismo, como referencias a artículos
+                            o enlaces que apuntan a publicaciones anteriores.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>< article ></code></td>
+                        <td>Este elemento representa un artículo independiente,
+                            como un mensaje de foro, el artículo de una revista, una
+                            entrada de un blog, un comentario, etc.</td>
+                    </tr>
+                    <tr>
+                        <td><code>< header ></code></td>
+                        <td>Este elemento define la cabecera del cuerpo o de
+                            secciones dentro del cuerpo.
+                        </td>
+                    </tr>
+                </table>
             </article>
         </section>
     </main>
