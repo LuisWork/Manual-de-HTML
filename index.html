@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Manual de HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>Manual de HTML</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Temario</li>
+            <li>Autor</li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Características de HTML5</h2>
+            <article>
+                <p>
+                    Es un lenguaje de etiquetas usado para presentar y estructurar el contenido en
+                    un sitio web. Es la quinta revisión del estándar HTML, el cual fue creado en
+                    1990. La W3C recomendó su utilización para transformarse en el estándar a ser
+                    usado en proyectos venideros. Está relacionado también con la entrada en
+                    decadencia del anterior estándar HTML 4, que se combinaba con otros
+                    lenguajes para producir los sitios que se pueden ver en la actualidad. Con
+                    HTML5 existen otras posibilidades para explotar sitios usando menos recursos,
+                    entrando conjuntamente en desuso el formato XHTML, dado que ya no sería
+                    necesaria su implementación.
+                    Se trata de un sistema para formatear el “layout” o disposición de las páginas
+                    web, así como hacer algunos ajustes a su aspecto. Con HTML5 los navegadores
+                    como Firefox, Chrome, Explorer, Safari y más pueden saber cómo mostrar una
+                    determinada página web, saber dónde están los elementos, dónde poner las
+                    imágenes, o bien dónde ubicar el texto. En este sentido, el HTML5 no se
+                    diferencia demasiado de su predecesor. La diferencia principal, sin embargo, es
+                    el nivel de sofisticación del código que se podrá construir usando HTML5. Las
+                    etiquetas que se indicarán más adelante son una combinación del estándar
+                    original con HTML5.
+                </p>
+                <p>
+                    Entre sus características se puede destacar:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Semántica:</strong> nuevas etiquetas con el fin de indicar principalmente a los
+                        motores de búsqueda cuál es el contenido principal, de navegación y
+                        contextual. Ayuda a mejorar la indexación en caso de que los motores de
+                        búsqueda no detecten la importancia de cada texto en una página web.
+                    </li>
+                    <li>
+                        <strong>Conectividad:</strong> Permite comunicarse con el servidor de formas nuevas e
+                        innovadoras. Entre estas formas de conexión se encuentran los
+                        WebSockets, eventos de servidor enviados y WebRTC.
+                    </li>
+                    <li>
+                        <strong>Sin conexión y almacenamiento:</strong>: Permite a las páginas web almacenar
+                        datos de forma local del lado del cliente y operar offline de una manera
+                        más eficiente.
+                    </li>
+                    <li>
+                        <strong>Multimedia:</strong> Se añade un mejor soporte sobre contenido multimedia
+                        permitiendo la reproducción de audio y video sin necesidad de
+                        componentes o plugins adicionales haciendo que la página reproduzca
+                        de forma nativa dicho contenido, De esta forma la página tarda menos
+                        en cargar y su navegación es más rápida.
+                    </li>
+                    <li>
+                        <strong>Gráficos y efectos 2D/3D:</strong> Proporciona una amplia gama de nuevas
+                        características que se ocupan de los gráficos en la web como lo son
+                        canvas 2D, WebGL, SVG, etc.
+                    </li>
+                    <li>
+                        <strong>Rendimiento e Integración:</strong> En general, se puede prescindir de muchos
+                        plugins y mejorar el rendimiento y velocidad optimizando los recursos de
+                        hardware. En esta categoría se han implementado: Web Workers,
+                        XMLHttpRequest, Motores JIT compilación de JavaScript, History API, el
+                        atributo contentEditable, Arrastrar y soltar, Gestión del foco en HTML,
+                        Manejadores de protocolo basados en web, requestAnimationFrame,
+                        Fullscreen API, API Pointer Lock, Eventos en línea y fuera de línea.
+                    </li>
+                    <li>
+                        <strong>Acceso al dispositivo:</strong> Proporciona APIs para el uso de la cámara, eventos
+                        táctiles, geolocalización, detección de la orientación del hardware y Pointer Lock.
+                    </li>
+                    <li>
+                        <strong>CSS3:</strong> HTML5 con CSS3 se hace una mancuerna estupenda porque se
+                        podría hacer una gran variedad de animaciones y efectos para realizar
+                        diseños sofisticados y sorprendentes con mínimos recursos de
+                        procesamiento. Se ha ampliado para ser capaz de manejar elementos de
+                        estilo de una manera mucho más compleja. Se pueden agregar sombras,
+                        bordes redondeados, transiciones, uso de tipografías externas, mejoras
+                        en el manejo de columnas y cuadros de distribución flexible.
+                    </li>
+                    <li>
+                        <strong>Compatibilidad:</strong> El W3C es una comunidad internacional donde los
+                        miembros trabajan en conjunto para la desarrollo de los estándares web.
+                        Estas implementaciones aún se siguen desarrollando y podemos ver los
+                        avances aquí, cada navegador implementa estas especificaciones a su
+                        propio ritmo.
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h2>Elementos, etiquetas y atributos</h2>
+                <p>Una de las principales ventajas de HTML5 es la inclusión de elementos
+                    semánticos, o marcados semánticos, que ayudan a definir las distintas
+                    divisiones de una página web. En las versiones anteriores a HTML5 se solía
+                    utilizar la etiqueta <code>< div ></code> para realizar las divisiones de una página web,
+                    pero actualmente es recomendado utilizar los elementos semánticos ya que
+                    describen claramente su propósito. Como se puede observar en el esquema de
+                    la figura siguiente, a través de marcadores semánticos se puede diferenciar
+                    claramente el contenido que referencia cada etiqueta.
+                </p>
+                <img src="img/1 - HTML.png" alt="">
+                <p>
+                    Cada uno de los elementos o etiquetas de HTML5 tiene sus propias
+                    propiedades. En la tabla siguiente se muestran las etiquetas más importantes
+                    que son parte de este estándar.
+                </p>
+                <table>
+                    <tr>
+                        <td>Etiqueta</td>
+                        <td>Función</td>
+                    </tr>
+                    <tr>
+                        <td><code>< !---- ></code></td>
+                        <td>Define un comentario</td>
+                    </tr>
+                    <tr>
+                        <td><code>< !DOCTYPE > </code></td>
+                        <td>Define el tipo de documento
+                    </tr>
+                    <tr>
+                        <td><code>< a >< /a ></code></td>
+                        <td>Define un hipervínculo</td>
+                    </tr>
+                    <tr>
+                        <td><code>< address ></ address></code></td>
+                        <td>Define la información de contacto del autor / propietario del
+                            documento
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>< article ></code></td>
+                        <td>Define un artículo</td>
+                    </tr>
+                    </td>
+                </table>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Creado por Luis Zambrano 2023 &copy;
+    </footer>
+</body>
+
+</html>
+
+<!--
+    …or create a new repository on the command line
+echo "# Manual-de-HTML" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/LuisWork/Manual-de-HTML.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/LuisWork/Manual-de-HTML.git
+git branch -M main
+git push -u origin main
+-->
