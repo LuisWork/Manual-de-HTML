@@ -2,3 +2,7 @@ code{
     color: black;
     background-color: gray;
 }
+
+table td{
+    border: 1px solid black;
+}
